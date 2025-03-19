@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <title>Piano Lites | Home</title>
+</head>
+<body>
+<header>
+  <div class="header-left">
+    <img src="logo.png" alt="Project Logo" class="logo" />
+    <h1>Piano <span class="red">L</span>i<span class="red">t</span>es</h1>
+  </div>
+  <nav class="header-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="thesystem.html">The System</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">
+  <section class="section">
+    <h1 class="title">Where Music Meets Technology</h1>
+    <div class="circles-container">
+      <!-- Left Circle with 45° Down-Right Arrow -->
+      <div class="circle-wrapper">
+        <div class="circle">Beginner?</div>
+        <div class="arrow-container">
+          <svg style="transform: translate(5px, -11px);" width="180" height="140" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#FF7E7E"/>
+              </marker>
+            </defs>
+            <line x1="50" y1="0" x2="175" y2="125" stroke="#FF7E7E" stroke-width="3" marker-end="url(#arrowhead)"/>
+          </svg>
+        </div>
+      </div>
+      <!-- Center Circle with Vertical Arrow -->
+      <div class="circle-wrapper">
+        <div class="circle">Intermediate?</div>
+        <div class="arrow-container">
+          <svg style="transform: translateY(-11px);" width="70" height="140" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrowhead-center" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#FF7E7E"/>
+              </marker>
+            </defs>
+            <line x1="50" y1="0" x2="50" y2="100" stroke="#FF7E7E" stroke-width="3" marker-end="url(#arrowhead-center)"/>
+          </svg>
+        </div>
+      </div>
+      <!-- Right Circle with 45° Down-Left Arrow -->
+      <div class="circle-wrapper">
+        <div class="circle">Advanced?</div>
+        <div class="arrow-container">
+          <svg style="transform: translate(-70px, -11px);" width="230" height="150" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrowhead-right" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#FF7E7E"/>
+              </marker>
+            </defs>
+            <line x1="120" y1="0" x2="5" y2="130" stroke="#FF7E7E" stroke-width="3" marker-end="url(#arrowhead-right)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="final-text">
+      <p>Piano Lites</p>
+    </div>
+  </section>
+
+  <!-- New Features Section with 4 Circles -->
+  <section class="section features-section">
+    <p style="margin-top: 70px;">We believe that music is for everyone</p>
+    <p style="font-size: 28px;">
+      Currently participating in the
+      <a href="https://www.utchallenge.nl/" target="_blank" style="color: inherit; text-decoration: underline;">
+        UT Entrepreneurial Challenge
+      </a>, we plan on launching a system that transforms piano learning.
+    </p>
+
+    <div class="features-container">
+      <div class="feature-wrapper">
+        <p class="feature-label">User-Friendly</p>
+        <div class="feature-circle first"></div>
+      </div>
+      <div class="feature-wrapper">
+        <p class="feature-label">Easy to Use</p>
+        <div class="feature-circle second"></div>
+      </div>
+      <div class="feature-wrapper">
+        <p class="feature-label">Fun</p>
+        <div class="feature-circle third"></div>
+      </div>
+      <div class="feature-wrapper">
+        <p class="feature-label">Accessible</p>
+        <div class="feature-circle fourth"></div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img style="width: 200px" src="logo2.png" alt="Piano Lites Logo" class="footer-logo-img">
+    </div>
+    <!-- Quick Links on the Left -->
+    <div class="footer-left">
+      <ul>
+        <li><a href="thesystem.html">The System</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Logo in the Middle -->
+
+
+    <!-- LinkedIn on the Right -->
+    <div class="footer-right">
+      <a href="https://www.linkedin.com" target="_blank">
+        <img onclick="https://www.linkedin.com/company/piano-lites/about/" src="linkedin.png" alt="LinkedIn" class="linkedin-icon">
+      </a>
+    </div>
+  </div>
+  <hr style="border: 1px solid #ccc; margin: 1rem 0;">
+  <p style="padding-bottom: 0.4rem;">&copy; 2025 Piano Lites. All rights reserved.</p>
+</footer>
+</body>
+</html>

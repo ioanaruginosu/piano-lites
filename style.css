@@ -1,0 +1,468 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #ECF2F9;
+    color: #333;
+
+}
+
+footer {
+    padding-top: 100px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 0; /* 20px 0 */
+    background: #fff;
+    margin-bottom: 1.25rem; /* 20px */
+    border-bottom: 1px solid #ddd;
+    font-family: 'DM Serif Display', serif;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #444;
+    margin-left: 0.625rem; /* 10px */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    max-height: 5rem; /* 80px */
+    width: auto;
+    margin-left: 1.5625rem; /* 25px */
+}
+
+.header-nav {
+    margin-right: 1.5625rem; /* 25px */
+    text-decoration: underline;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-nav ul li {
+    margin-left: 1.25rem; /* 20px */
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6rem;
+    padding-right: 0.9375rem; /* 15px */
+}
+
+.header-nav ul li a:hover {
+    color: #FF7E7E;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 62.5rem; /* 1000px */
+    margin: 0 auto;
+    padding: 1.875rem; /* 30px */
+}
+
+/* Section & Typography */
+.section {
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+.title {
+    text-align: center;
+    font-size: 2.7rem;
+    margin-top: 4.375rem; /* 70px */
+    margin-bottom: 3.75rem; /* 60px */
+}
+
+section h1 {
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 2.5rem; /* 40px */
+}
+
+section p {
+    text-align: center;
+    font-size: 2.1875rem; /* ~35px */
+}
+
+/* Steps Section */
+.steps {
+    margin-top: 3.75rem; /* 60px */
+    margin-left: -6.25rem; /* -100px */
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.8125rem; /* 45px */
+}
+
+.circle-step {
+    width: 3.125rem; /* 50px */
+    height: 3.125rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3.125rem;
+    margin-right: 0.9375rem; /* 15px */
+}
+
+.blue  { background: #CAD6FF; }
+.redd  { background: #FFA6A6; }
+.yellow { background: #FFFDB7; }
+.green { background: #C0FFA8; }
+
+.step-text {
+    font-size: 1.6rem;
+    color: #444;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 1.25rem; /* 20px */
+}
+
+
+.red {
+    color: #FF7E7E;
+}
+section.colored {
+    background: rgba(255, 126, 126, 0.4);
+    padding: 0;
+}
+.slider-section {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    margin: 2rem 0;
+
+}
+.slider {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.slider .slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+.slider .slide.active {
+    display: block;
+}
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.slider-text {
+    width: 100%;
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.slider-text p {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+/* Circles Section */
+.circles-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 5rem; /* 80px */
+}
+
+.circle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 10rem; /* 160px */
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 0.5rem solid #FF7E7E; /* 8px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+.arrow-container {
+    width: 6.25rem; /* 100px */
+    height: 6.25rem;
+}
+
+.final-text {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1.25rem; /* 20px */
+    font-family: 'Poppins', serif;
+    color: #444;
+    font-weight: bold;
+}
+
+/* New Features Section */
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3.75rem; /* 60px */
+}
+
+.features-container.check {
+    gap: 2.3rem;
+    justify-content: center;
+}
+
+.feature-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.feature-label {
+    margin-bottom: 0.625rem; /* 10px */
+    font-size: 1.2rem;
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+}
+
+.feature-circle {
+    width: 3.75rem; /* 60px */
+    height: 3.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: blink 2s infinite;
+}
+
+.feature-circle.first {
+    background: #CAD6FF;
+    animation-delay: 0s;
+}
+
+.feature-circle.second {
+    background: #FFA6A6;
+    animation-delay: 0.5s;
+}
+
+.feature-circle.third {
+    background: #FFFDB7;
+    animation-delay: 1s;
+}
+
+.feature-circle.fourth {
+    background: #C0FFA8;
+    animation-delay: 1.5s;
+}
+.feature-text-and-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature-check-icon {
+    margin-left: 0.4rem; /* adjust as needed */
+    width: 50px;
+}
+.feature-label {
+    font-size: 30px;
+}
+
+.footer-container {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+
+}
+
+/* Left section with quick links */
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left li {
+    margin: 0.5rem 0;
+}
+
+.footer-left a {
+    color: #333;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+.footer-left a:hover {
+    text-decoration: underline;
+}
+
+/* Logo in the center */
+.footer-logo {
+    text-align: right;
+}
+
+.footer-logo-img {
+    width: 140px; /* Adjust size as needed */
+    margin-top: -35px;
+}
+
+/* Right section with LinkedIn icon */
+.footer-right a {
+    color: white;
+}
+
+.linkedin-icon {
+    width: 40px; /* Adjust size as needed */
+}
+
+/* Contact Form Styling */
+
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form elements */
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input, textarea {
+    width: 500px;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 0.8rem 1.5rem; /* Reduced padding */
+    background-color: #FF7E7E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem; /* Adjust font size if needed */
+    width: auto; /* Let the width adjust based on content */
+
+
+    text-align: center;
+}
+
+
+.submit-button:hover {
+    background-color: #ec7777;
+}
+
+
+/* Keyframes */
+@keyframes blink {
+    0%, 100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(0.7);
+    }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 37.5rem) { /* 600px */
+    header {
+        flex-direction: column;
+    }
+    .header-nav {
+        margin-top: 0.9375rem; /* 15px */
+    }
+    .header-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-nav ul li {
+        margin: 0.625rem 0; /* 10px */
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    .header-left .logo {
+        max-height: 3.75rem; /* 60px */
+        margin-right: 0.625rem; /* 10px */
+    }
+    .container {
+        padding: 1.25rem; /* 20px */
+    }
+    .circles-container,
+    .features-container {
+        flex-wrap: nowrap;
+
+        flex-direction: column;
+        gap: 1.25rem; /* 20px */
+    }
+    .step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .circle-step {
+        margin-bottom: 0.625rem; /* 10px */
+    }
+    .slider-text-section {
+        flex-direction: column;
+    }
+}

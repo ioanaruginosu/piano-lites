@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Piano Lites | The System</title>
+    <style>
+        /* Remove default margin/padding if needed */
+        footer, html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container and layout styles */
+        .slider-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2rem 0;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        .slider {
+            width: 45%;
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+        }
+        .slider .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .slider .slide.active {
+            opacity: 1;
+        }
+        .slider .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .slider-text {
+            width: 55%;
+            padding: 1rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Full-width colored section */
+        .colored {
+            background: rgba(255, 126, 126, 0.5);
+            text-align: center;
+
+        }
+        .button-container {
+            padding-bottom: 5rem;
+        }
+        /* Example button styling */
+
+        .colored-button {
+            display: inline-block;
+            color: #333;
+            text-decoration: underline;
+            border-radius: 15px;
+            margin: 0 0.5rem;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            font-size: 22px;
+        }
+        .colored h2.title {
+            margin-bottom: 0.3rem; /* or 0 to remove completely */
+            padding-top: 5rem;
+        }
+
+        .colored-button:hover {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <img src="logo.png" alt="Project Logo" class="logo">
+        <h1>Piano <span class="red">L</span>i<span class="red">t</span>es</h1>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">The System</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <section class="section">
+        <h1 class="title">Our system is designed to make piano learning at home easy and personalized.</h1>
+    </section>
+    <!-- Steps Section -->
+    <section class="steps">
+        <div class="step">
+            <div class="circle-step blue">1</div>
+            <p class="step-text">Make an account 👤</p>
+        </div>
+        <div class="step">
+            <div class="circle-step redd">2</div>
+            <p class="step-text">Choose a song, a mode and your preferred colours for the LEDs 🎶</p>
+        </div>
+        <div class="step">
+            <div class="circle-step yellow">3</div>
+            <p class="step-text">Start practicing with your preferred settings 🚀</p>
+        </div>
+        <div class="step">
+            <div class="circle-step green">4</div>
+            <p class="step-text">Receive statistics, feedback, collect badges and improve your skills ✅</p>
+        </div>
+    </section>
+    <!-- Slider with Text Section -->
+    <section class="slider-section">
+        <!-- Slider Container -->
+        <div class="slider">
+            <div class="slide active">
+                <img src="1.jpeg" alt="Random Image 1">
+            </div>
+            <div class="slide">
+                <img src="2.jpeg" alt="Random Image 2">
+            </div>
+            <div class="slide">
+                <img src="3.jpeg" alt="Random Image 3">
+            </div>
+            <div class="slide">
+                <img src="4.jpeg" alt="Random Image 3">
+            </div>
+            <div class="slide">
+                <img src="5.jpeg" alt="Random Image 3">
+            </div>
+        </div>
+        <!-- Text on the Right -->
+        <div class="slider-text">
+            <p style="font-size: 25px; font-weight: bold">
+                The system went through rounds of user testing, so we collected a lot of useful feedback that we used to build the best experience for all users.
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <h3 class="title">Whether you're a beginner or an advanced player, Piano Lites is full of features that bring fun to all users.</h3>
+        <div class="features-container check">
+            <div class="feature-wrapper">
+                <div class="feature-text-and-icon">
+                    <p class="feature-label">Fast</p>
+                    <img style="margin-left: 0.2rem;" src="check.png" alt="check" class="feature-check-icon" />
+                </div>
+            </div>
+            <div class="feature-wrapper">
+                <div class="feature-text-and-icon">
+                    <p class="feature-label">Normal</p>
+                    <img src="check.png" alt="check" class="feature-check-icon" />
+                </div>
+            </div>
+            <div class="feature-wrapper">
+                <div class="feature-text-and-icon">
+                    <p class="feature-label">Slow</p>
+                    <img src="check.png" alt="check" class="feature-check-icon" />
+                </div>
+            </div>
+            <div class="feature-wrapper">
+                <div class="feature-text-and-icon">
+                    <p class="feature-label">Both Hands</p>
+                    <img src="check.png" alt="check" class="feature-check-icon" />
+                </div>
+            </div>
+            <div class="feature-wrapper">
+                <div class="feature-text-and-icon">
+                    <p class="feature-label">Right/Left Hand Only</p>
+                    <img src="check.png" alt="check" class="feature-check-icon" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Full-width colored section with buttons -->
+<section class="colored">
+    <h2 class="title">Sounds Fun?</h2>
+    <div class="button-container">
+        <a href="contact.html" class="colored-button">Contact</a>
+        <a href="aboutus.html" class="colored-button">About Us</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img style="width: 200px" src="logo2.png" alt="Piano Lites Logo" class="footer-logo-img">
+        </div>
+        <!-- Quick Links on the Left -->
+        <div class="footer-left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Logo in the Middle -->
+
+
+        <!-- LinkedIn on the Right -->
+        <div class="footer-right">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img onclick="https://www.linkedin.com/company/piano-lites/about/" src="linkedin.png" alt="LinkedIn" class="linkedin-icon">
+            </a>
+        </div>
+    </div>
+    <hr style="border: 1px solid #ccc; margin: 1rem 0;">
+    <p style="padding-bottom: 0.4rem;">&copy; 2025 Piano Lites. All rights reserved.</p>
+</footer>
+
+
+<script>
+    // Simple JavaScript slider for the new slider section
+    const slides = document.querySelectorAll('.slider .slide');
+    let currentSlide = 0;
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 3000);
+</script>
+</body>
+</html>
