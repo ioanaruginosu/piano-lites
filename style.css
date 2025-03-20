@@ -17,6 +17,12 @@ footer {
     padding-top: 100px;
 }
 
+.centered-gif {
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Header Styles */
 header {
     display: flex;
@@ -70,6 +76,7 @@ header h1 {
 .header-nav ul li a:hover {
     color: #FF7E7E;
 }
+
 
 /* Container */
 .container {
