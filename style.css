@@ -164,11 +164,10 @@ section.colored {
     display: flex;
     /*align-items: center;*/
     justify-content: space-between;
-    margin: 2rem 0;
+
 
 }
 .slider {
-    width: 50%;
     position: relative;
     overflow: hidden;
 }
@@ -195,7 +194,7 @@ section.colored {
 
 }
 .slider-text p {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 1rem;
 }
 
@@ -497,8 +496,28 @@ textarea {
         line-height: 2.8rem;
     }
     .about-us-img {
-        width: 300px;
+        width: 350px;
     }
+    .slider-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .features-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .slider-text p {
+        font-size: 20px;
+    }
+
+    .centered-gif {
+        width: 430px;
+    }
+
 
 }
 
@@ -528,19 +547,38 @@ textarea {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .about-us-img {
-        width: 500px;
-    }
+
 
     input, textarea {
         width: 300px;
 
     }
+    .slider-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .features-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .slider-text.p {
+        font-size: 15px;
+    }
+    /*.centered-gif {*/
+    /*    width: 470px;*/
+    /*}*/
 
 }
 
 @media (max-width: 1200px) {
     .steps {
         margin-left: 0;
+    }
+    .centered-gif {
+        width: 480px;
     }
 }
