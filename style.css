@@ -515,7 +515,7 @@ textarea {
     }
 
     .centered-gif {
-        width: 430px;
+        width: 400px;
     }
 
 
@@ -578,7 +578,5 @@ textarea {
     .steps {
         margin-left: 0;
     }
-    .centered-gif {
-        width: 480px;
-    }
+
 }
