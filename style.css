@@ -467,6 +467,7 @@ textarea {
         align-items: flex-start;
     }
     .circle-step {
+        width: 2rem;
         margin-bottom: 0.625rem; /* 10px */
     }
     .slider-text-section {
