@@ -165,7 +165,7 @@ section.colored {
 }
 .slider-section {
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
 
@@ -174,7 +174,7 @@ section.colored {
     position: relative;
     overflow: hidden;
     flex: 0 0 auto;  /* Prevents the slider from growing or shrinking */
-    min-width: 350px;
+    min-width: 300px;
     width: 100%;
 }
 .slider .slide {
