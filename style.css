@@ -527,12 +527,11 @@ textarea {
         max-height: 3.75rem; /* 60px */
         margin-right: 0.625rem; /* 10px */
     }
-    .container {
-        padding: 1.25rem; /* 20px */
-    }
+    /*.container {*/
+    /*    padding: 1.25rem; !* 20px *!*/
+    /*}*/
     .circles-container,
     .features-container {
-        flex-wrap: nowrap;
 
 
         gap: 1.25rem; /* 20px */
@@ -550,9 +549,9 @@ textarea {
     }
 
     .circle {
-        width: 7.5rem; /* 160px */
-        height: 7.5rem;
-        font-size: 0.8rem;
+        width: 6rem; /* 160px */
+        height: 6rem;
+        font-size: 0.7rem;
         border: 0.35rem solid #FF7E7E; /* 8px */
     }
 
