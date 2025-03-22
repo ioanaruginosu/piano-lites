@@ -514,11 +514,7 @@ textarea {
         font-size: 20px;
     }
 
-    .centered-gif {
-        width: 400px;
-        display: block;
-        margin: 0 auto;
-    }
+
 
 
 }
@@ -573,6 +569,12 @@ textarea {
     /*.centered-gif {*/
     /*    width: 470px;*/
     /*}*/
+
+    .centered-gif {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
 
 }
 
