@@ -420,8 +420,8 @@ textarea {
     background-color: #ec7777;
 }
 
-.about-us-img {
-    width: 600px;
+.right {
+    transform: translate(-14.5px, -4px);
 }
 
 
@@ -507,6 +507,11 @@ textarea {
 }
 
 @media (max-width: 600px) { /* 600px */
+    .title {
+        font-size: 2.2rem;
+        margin-top: 4rem; /* 70px */
+        margin-bottom: 3.2rem; /* 60px */
+    }
     header {
         flex-direction: column;
     }
@@ -583,6 +588,14 @@ textarea {
     }
     .slider-text p {
         font-size: 20px;
+    }
+
+    .right {
+        transform: translate(-1px, -2px);
+    }
+
+    .left {
+        transform: translate(-18px, -2px);
     }
 
 
