@@ -119,7 +119,7 @@ section p {
 
 .step {
     display: flex;
-    align-items: center;
+
     margin-bottom: 2.8125rem; /* 45px */
 }
 
@@ -133,6 +133,7 @@ section p {
     text-align: center;
     line-height: 3.125rem;
     margin-right: 0.9375rem; /* 15px */
+    flex-shrink: 0;
 }
 
 .blue  { background: #CAD6FF; }
@@ -166,14 +167,17 @@ section.colored {
     display: flex;
     /*align-items: center;*/
     justify-content: space-between;
-
+    flex-shrink: 0;
 
 }
 .slider {
     position: relative;
     overflow: hidden;
+    flex: 0 0 auto;  /* Prevents the slider from growing or shrinking */
+    min-width: 350px;
 }
 .slider .slide {
+    flex-shrink: 0;
     display: none;
     position: absolute;
     top: 0;
@@ -188,16 +192,19 @@ section.colored {
     width: 100%;
     height: auto;
     display: block;
+    flex-shrink: 0;
 }
 .slider-text {
     width: 100%;
     margin-left: 2rem;
     font-family: 'Poppins', sans-serif;
-
+    flex: 0 0 auto; /* Prevents both growing and shrinking */
+    min-width: 350px;
 }
 .slider-text p {
     font-size: 25px;
     margin-bottom: 1rem;
+
 }
 
 /* Circles Section */
@@ -537,16 +544,16 @@ textarea {
     /*}*/
     .circles-container,
     .features-container {
-
-
         gap: 1.25rem; /* 20px */
+
     }
     .step {
 
-        align-items: flex-start;
+        /*align-items: normal;*/
     }
     .circle-step {
         width: 2rem;
+        height: 2rem;
         margin-bottom: 0.625rem; /* 10px */
     }
     .slider-text-section {
@@ -596,6 +603,18 @@ textarea {
 
     .left {
         transform: translate(-18px, -2px);
+    }
+
+    .feature-label {
+        font-size: 25px;
+    }
+
+    .feature-check-icon {
+        width: 30px;
+    }
+
+    .slider {
+        width: 350px;
     }
 
 
