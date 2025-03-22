@@ -175,6 +175,7 @@ section.colored {
     overflow: hidden;
     flex: 0 0 auto;  /* Prevents the slider from growing or shrinking */
     min-width: 350px;
+    width: 100%;
 }
 .slider .slide {
     flex-shrink: 0;
@@ -613,9 +614,9 @@ textarea {
         width: 30px;
     }
 
-    .slider {
-        width: 350px;
-    }
+    /*.slider {*/
+    /*    width: 350px;*/
+    /*}*/
 
 
     /*.centered-gif {*/
