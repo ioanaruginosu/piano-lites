@@ -432,6 +432,13 @@ textarea {
     transform: translate(-14.5px, -4px);
 }
 
+.about-us-img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+
+}
 
 /* Keyframes */
 @keyframes blink {
@@ -494,6 +501,7 @@ textarea {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;  /* Added to center items horizontally */
         flex-direction: column;
     }
     .features-container {
@@ -579,13 +587,11 @@ textarea {
         height: 2.8rem;
         line-height: 2.8rem;
     }
-    .about-us-img {
-        width: 350px;
-    }
     .slider-section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;  /* Added to center items horizontally */
         flex-direction: column;
     }
     .features-container {
