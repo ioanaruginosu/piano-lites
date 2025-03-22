@@ -434,7 +434,7 @@ textarea {
 }
 
 /* Responsive Design for Smaller Screens */
-@media (max-width: 800px) { /* 600px */
+@media (max-width: 400px) { /* 600px */
     header {
         flex-direction: column;
     }
