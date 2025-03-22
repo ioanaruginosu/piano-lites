@@ -21,6 +21,7 @@ footer {
     width: 700px;
     display: block;
     margin: 0 auto;
+
 }
 
 /* Header Styles */
@@ -444,7 +445,6 @@ textarea {
     .centered-gif {
         width: 550px;
         display: block;
-        margin: 0 auto;
     }
 
 }
@@ -503,7 +503,6 @@ textarea {
     .centered-gif {
         width: 400px;
         display: block;
-        margin: 0 auto;
     }
 
 }
@@ -592,9 +591,15 @@ textarea {
     .centered-gif {
         width: 350px;
         display: block;
-        margin: 0 auto;
     }
 
+}
+
+@media (max-width: 230px) {
+    .centered-gif {
+        width: 320px;
+        margin: 0;
+    }
 }
 
 
