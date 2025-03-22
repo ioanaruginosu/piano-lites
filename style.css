@@ -18,9 +18,10 @@ footer {
 }
 
 .centered-gif {
-    width: 700px;
     display: block;
     margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
 
 }
 
@@ -442,10 +443,10 @@ textarea {
         margin-left: 0;
     }
 
-    .centered-gif {
-        width: 550px;
-        display: block;
-    }
+    /*.centered-gif {*/
+    /*    width: 550px;*/
+    /*    display: block;*/
+    /*}*/
 
 }
 
@@ -496,14 +497,12 @@ textarea {
     .slider-text.p {
         font-size: 15px;
     }
-    /*.centered-gif {*/
-    /*    width: 470px;*/
-    /*}*/
 
-    .centered-gif {
-        width: 400px;
-        display: block;
-    }
+
+    /*.centered-gif {*/
+    /*    width: 400px;*/
+    /*    display: block;*/
+    /*}*/
 
 }
 
@@ -588,18 +587,13 @@ textarea {
     }
 
 
-    .centered-gif {
-        width: 350px;
-        display: block;
-    }
+    /*.centered-gif {*/
+    /*    width: 350px;*/
+    /*    display: block;*/
+    /*    margin: 0 auto;*/
+    /*}*/
 
 }
 
-@media (max-width: 230px) {
-    .centered-gif {
-        width: 320px;
-        margin: 0;
-    }
-}
 
 
