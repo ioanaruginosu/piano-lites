@@ -589,10 +589,20 @@ textarea {
     }
     .slider-section {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;  /* Added to center items horizontally */
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .slider {
+        min-width: 250px;    /* Allow it to shrink */
+        width: 100%;     /* Use full container width */
+        margin: 0 auto;  /* Center horizontally */
+    }
+    .slider-text {
+        min-width: 250px;    /* Remove fixed min-width */
+        width: 100%;     /* Use full container width */
+        margin-left: 0;  /* Remove left offset */
+        text-align: center;
     }
     .features-container {
         display: flex;
