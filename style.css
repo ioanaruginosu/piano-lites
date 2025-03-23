@@ -37,6 +37,14 @@ header {
     font-family: 'DM Serif Display', serif;
 }
 
+.index-header {
+    background: #ECF2F9;
+    justify-content: right;
+    margin-right: 15px;
+}
+
+
+
 header h1 {
     font-size: 2.5rem;
     color: #444;
@@ -450,6 +458,65 @@ textarea {
 
 }
 
+/* Hamburger button styling */
+.menu-toggle {
+    display: none; /* Hidden by default on larger screens */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Side Menu Styling */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Hide off-canvas initially */
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.side-menu.open {
+    right: 0; /* Slide into view when open */
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.side-menu ul li {
+    margin-bottom: 1.5rem;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Close button styling for side menu */
+.close-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
 /* Keyframes */
 @keyframes blink {
     0%, 100% {
@@ -476,21 +543,24 @@ textarea {
 }
 
 @media (max-width: 1000px) {
-    header {
-        flex-direction: column;
-    }
+    /*header {*/
+    /*    flex-direction: column;*/
+    /*}*/
     .header-nav {
         margin-top: 0.9375rem; /* 15px */
     }
-    .header-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+    /*.header-nav ul {*/
+    /*    flex-direction: column;*/
+    /*    align-items: center;*/
+    /*}*/
     .header-nav ul li {
         margin: 0.625rem 0; /* 10px */
     }
+    .header-nav ul li a {
+        font-size: 20px;
+    }
     header h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .header-left .logo {
         max-height: 3.75rem; /* 60px */
@@ -532,25 +602,89 @@ textarea {
 
 }
 
+@media (max-width: 850px) {
+    /*header {*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*.header-nav {*/
+    /*    margin-top: 0.9375rem; !* 15px *!*/
+    /*}*/
+    /*.header-nav ul {*/
+    /*    flex-direction: column;*/
+    /*    align-items: center;*/
+    /*}*/
+    /*.header-nav ul li {*/
+    /*    margin: 0.625rem 0; !* 10px *!*/
+    /*}*/
+    /*.header-nav ul li a {*/
+    /*    font-size: 20px;*/
+    /*}*/
+    .header-nav {
+        display: none; /* Hide original menu on small screens */
+    }
+    .menu-toggle {
+        display: block; /* Show hamburger button */
+    }
+    .index-header {
+        border-bottom: 0;
+    }
+    header h1 {
+        font-size: 1.7rem;
+    }
+    .header-left .logo {
+        max-height: 3.75rem; /* 60px */
+        margin-right: 0.625rem; /* 10px */
+    }
+    .features-container.check {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    input, textarea {
+        width: 300px;
+
+    }
+    .slider-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;  /* Added to center items horizontally */
+        flex-direction: column;
+    }
+    .features-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .slider-text.p {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 600px) { /* 600px */
     .title {
         font-size: 1.7rem;
         margin-top: 4rem; /* 70px */
         margin-bottom: 3.2rem; /* 60px */
     }
-    header {
-        flex-direction: column;
-    }
+    /*header {*/
+    /*    flex-direction: column;*/
+    /*}*/
     .header-nav {
         margin-top: 0.9375rem; /* 15px */
     }
-    .header-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+    /*.header-nav ul {*/
+    /*    flex-direction: column;*/
+    /*    align-items: center;*/
+    /*}*/
     .header-nav ul li {
         margin: 0.625rem 0; /* 10px */
     }
+
+
     header h1 {
         font-size: 2rem;
     }
@@ -646,6 +780,16 @@ textarea {
 
     .bigger {
         font-size: 30px;
+    }
+
+    .header-nav {
+        display: none; /* Hide original menu on small screens */
+    }
+    .menu-toggle {
+        display: block; /* Show hamburger button */
+    }
+    .index-header {
+        border-bottom: 0;
     }
 
     /*.slider {*/

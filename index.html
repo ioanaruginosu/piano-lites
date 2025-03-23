@@ -51,17 +51,27 @@
     /*}*/
 
 </style>
-<header style="background: #ECF2F9; justify-content: center;">
+<header class="index-header">
 
-    <nav class="header-nav">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="thesystem.html">The System</a></li>
-            <li><a href="aboutus.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!--    <nav class="header-nav">-->
+<!--        <ul>-->
+<!--            <li><a href="home.html">Home</a></li>-->
+<!--            <li><a href="thesystem.html">The System</a></li>-->
+<!--            <li><a href="aboutus.html">About us</a></li>-->
+<!--            <li><a href="contact.html">Contact</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 </header>
+<div id="side-menu" class="side-menu">
+    <button class="close-menu" onclick="toggleMenu()">×</button>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="thesystem.html">The System</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
 <div class="container">
     <section>
         <h1 class="title big" >Start Your Piano Learning Journey!</h1>
@@ -75,6 +85,7 @@
         <!-- Quick Links on the Left -->
         <div class="footer-left">
             <ul>
+                <li><a href="thesystem.html">Home</a></li>
                 <li><a href="thesystem.html">The System</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -94,5 +105,11 @@
     <hr style="border: 1px solid #ccc; margin: 1rem 0;">
     <p style="padding-bottom: 0.4rem;">&copy; 2025 Piano Lites. All rights reserved.</p>
 </footer>
+<script>
+    function toggleMenu() {
+        var sideMenu = document.getElementById('side-menu');
+        sideMenu.classList.toggle('open');
+    }
+</script>
 </body>
 </html>

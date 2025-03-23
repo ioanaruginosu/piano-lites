@@ -15,15 +15,31 @@
     <img src="logo.png" alt="Project Logo" class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;"/>
     <h1>Piano <span class="red">L</span>i<span class="red">t</span>es</h1>
   </div>
-  <nav class="header-nav">
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="thesystem.html">The System</a></li>
-      <li><a href=#>About us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Regular navigation (visible on larger screens) -->
+  <div class="header-right">
+    <nav class="header-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="thesystem.html">The System</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Hamburger button (visible on smaller screens) -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
 </header>
+
+<!-- Side Menu for Smaller Screens -->
+<div id="side-menu" class="side-menu">
+  <button class="close-menu" onclick="toggleMenu()">×</button>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="thesystem.html">The System</a></li>
+    <li><a href="aboutus.html">About us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
     <div class="container">
       <section class="section">
         <h1 class="title">From zero to the UT Challenge</h1>
@@ -61,5 +77,12 @@
   <hr style="border: 1px solid #ccc; margin: 1rem 0;">
   <p style="padding-bottom: 0.4rem;">&copy; 2025 Piano Lites. All rights reserved.</p>
 </footer>
+
+<script>
+  function toggleMenu() {
+    var sideMenu = document.getElementById('side-menu');
+    sideMenu.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

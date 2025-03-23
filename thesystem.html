@@ -85,18 +85,34 @@
 <body>
 <header>
     <div class="header-left">
-        <img src="logo.png" alt="Project Logo" class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+        <img src="logo.png" alt="Project Logo" class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;"/>
         <h1>Piano <span class="red">L</span>i<span class="red">t</span>es</h1>
     </div>
-    <nav class="header-nav">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">The System</a></li>
-            <li><a href="aboutus.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Regular navigation (visible on larger screens) -->
+    <div class="header-right">
+        <nav class="header-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="thesystem.html">The System</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger button (visible on smaller screens) -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
 </header>
+
+<!-- Side Menu for Smaller Screens -->
+<div id="side-menu" class="side-menu">
+    <button class="close-menu" onclick="toggleMenu()">×</button>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="thesystem.html">The System</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
 <div class="container">
     <section class="section">
         <h1 class="title">Our system is designed to make piano learning at home easy and personalized.</h1>
@@ -231,6 +247,11 @@
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
     }, 3000);
+
+    function toggleMenu() {
+        var sideMenu = document.getElementById('side-menu');
+        sideMenu.classList.toggle('open');
+    }
 </script>
 </body>
 </html>
