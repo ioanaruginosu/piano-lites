@@ -41,6 +41,7 @@ header {
     background: #ECF2F9;
     justify-content: right;
     margin-right: 15px;
+    border-bottom: 0;
 }
 
 
@@ -466,6 +467,13 @@ textarea {
     font-size: 2rem;
     cursor: pointer;
 }
+.menu-toggle-index {
+    display: block; /* Hidden by default on larger screens */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
 
 /* Side Menu Styling */
 .side-menu {
@@ -625,9 +633,7 @@ textarea {
     .menu-toggle {
         display: block; /* Show hamburger button */
     }
-    .index-header {
-        border-bottom: 0;
-    }
+
     header h1 {
         font-size: 1.7rem;
     }
@@ -788,9 +794,7 @@ textarea {
     .menu-toggle {
         display: block; /* Show hamburger button */
     }
-    .index-header {
-        border-bottom: 0;
-    }
+
 
     /*.slider {*/
     /*    width: 350px;*/
