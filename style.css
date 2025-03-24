@@ -471,8 +471,9 @@ textarea {
     display: block; /* Hidden by default on larger screens */
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Side Menu Styling */
@@ -692,11 +693,11 @@ textarea {
 
 
     header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .header-left .logo {
-        max-height: 3.75rem; /* 60px */
-        margin-right: 0.625rem; /* 10px */
+        max-height: 3.3rem; /* 60px */
+        margin-right: 0rem; /* 10px */
     }
     /*.container {*/
     /*    padding: 1.25rem; !* 20px *!*/
